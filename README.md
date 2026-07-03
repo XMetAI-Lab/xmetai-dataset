@@ -1,2 +1,40 @@
-# xmetai-dataset
-Weather &amp; climate AI dataset structure and metadata
+# XMetAI 数据集
+
+## 1. 项目简介
+
+本仓库用于提供 xmetai-core 框架所使用的数据集结构说明与配置方式。
+
+
+---
+
+## 2. 数据准备
+
+当前支持的主要数据集均采用 **Zarr 格式** 存储，包括：
+
+
+数据目录结构如下：
+
+```bash
+data/xmetai-data/
+├── CRA
+│   └── zarr
+│       ├── cra.1979-2025.c71.p25.h6
+│       ├── cra.1979_2024.c87.p25.h24
+│       ├── cra.1979_2025.c87.1p5.h24.new.zarr
+│       └── cra.2000_2024.c87.p25.h24
+│
+├── ERA
+│   └── zarr
+│       ├── era5.1959_2023.c87.p25.h24
+│       ├── era5.1959_2025.c87.p25.h24
+│       ├── era5.1979-2024.c78.p25.h6
+│       ├── s2s.1950-2024.c76
+│       └── s2s.1950-2026.c76
+│
+├── ERA5-Land
+│   └── zarr
+│       └── land.1950-2024.c8
+└── ORAS5
+    └── zarr
+        ├── oras5.1993-2024.c88.1p5.h24
+        └── oras5.1993-2024.c88.p25.h24
